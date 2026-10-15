@@ -6,6 +6,5 @@ module "green_instance_profile" {
   lob              = var.lob
   name             = "PdnGreenInstanceProfile"
   organization_id  = "o-m8cxcbau0l"
-  custom_policy    = data.aws_iam_policy_document.pdn_green.json
   managed_policies = ["AmazonRDSFullAccess"]
 }

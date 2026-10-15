@@ -10,6 +10,7 @@ locals {
         snapshot_id = null
       }
     }
+
     node2 = {
       data = {
         device_name = "/dev/sdf"

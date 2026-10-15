@@ -1,8 +1,8 @@
-data "aws_vpcs" "current" {
-}
-
 data "aws_vpc" "current" {
-  id = one(data.aws_vpcs.current.ids)
+  filter {
+    name   = "tag:Name"
+    values = ["nyl-${var.lob}-default-${var.env}-vpc"]
+  }
 }
 
 data "aws_subnets" "compute" {

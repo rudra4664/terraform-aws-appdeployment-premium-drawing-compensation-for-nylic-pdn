@@ -27,7 +27,6 @@ provider "aws" {
     ]
 
     key_prefixes = [
-      "cloudaware:",
       "nyl:platform:",
     ]
   }

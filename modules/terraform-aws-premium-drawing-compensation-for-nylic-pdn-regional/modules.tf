@@ -70,7 +70,7 @@ module "green_instances" {
 
   instance = {
     iam_instance_profile = var.iam_instance_profile_name
-    instance_type        = "t3.medium"
+    instance_type        = "t3a.medium"
     key_name             = "NYL_CORPORATEVS_DEV_KEYPAIR"
     monitoring           = false
     name                 = each.value.name
@@ -79,7 +79,7 @@ module "green_instances" {
 
     root_volume = {
       size = each.value.root_volume_size
-      type = "standard"
+      type = "gp3"
     }
   }
 

@@ -1,3 +1,5 @@
+> Historical review of the earlier layout. For current PR changes, VPC lookup and pending module dependencies, see PR-REVIEW-STATUS.md and DEPLOYMENT-NOTES.md.
+
 # Terraform workspace review
 
 Reviewed all 16 Terraform files against README.md.

@@ -20,14 +20,14 @@ variable "tags" {
   type        = map(string)
 
   default = {
-    appName         = "PDN"
-    component       = "cmf-webserver"
-    datatype        = "Business Confidential"
-    "map-migrated"  = "mig40012"
-    "nyl:provision" = "tfe"
-    platform        = "aws"
-    project         = "CloudMigration"
-    provider        = "aws"
+    appName                         = "PDN"
+    component                       = "cmf-webserver"
+    "nyl:informationClassification" = "Confidential"
+    "map-migrated"                  = "mig40012"
+    "nyl:provision"                 = "tfe"
+    platform                        = "aws"
+    project                         = "CloudMigration"
+    provider                        = "aws"
   }
 }
 
@@ -43,7 +43,7 @@ variable "green_instances" {
   })))
 
   default = {
-    "856115015560" = { # DEV
+    "856115015560" = { # nyl-corporatevs-dev
       node1 = {
         availability_zone   = "us-east-1a"
         name                = "pdn-node-1-green"

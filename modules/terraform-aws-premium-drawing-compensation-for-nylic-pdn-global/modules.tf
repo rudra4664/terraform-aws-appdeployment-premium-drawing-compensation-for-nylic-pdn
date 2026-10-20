@@ -7,4 +7,8 @@ module "green_instance_profile" {
   name             = "PdnGreenInstanceProfile"
   organization_id  = "o-m8cxcbau0l"
   managed_policies = ["AmazonRDSFullAccess"]
+
+  providers = {
+    aws = aws
+  }
 }

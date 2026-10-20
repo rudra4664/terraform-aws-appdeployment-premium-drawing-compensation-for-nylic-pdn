@@ -12,6 +12,10 @@ module "pdn_instance_access_sg" {
     ingress     = local.pdn_ingress
     egress      = {}
   }
+
+  providers = {
+    aws = aws
+  }
 }
 
 module "cyberark_instance_access_sg" {
@@ -27,6 +31,10 @@ module "cyberark_instance_access_sg" {
     vpc_id      = data.aws_vpc.current.id
     ingress     = local.cyberark_ingress
     egress      = {}
+  }
+
+  providers = {
+    aws = aws
   }
 }
 
@@ -49,6 +57,10 @@ module "vpc_access_sg" {
         cidr_ipv4   = "0.0.0.0/0"
       }
     }
+  }
+
+  providers = {
+    aws = aws
   }
 }
 
@@ -86,5 +98,9 @@ module "green_instances" {
   network = {
     subnet_id          = local.subnet_ids_by_az[each.value.availability_zone]
     security_group_ids = local.green_security_group_ids
+  }
+
+  providers = {
+    aws = aws
   }
 }

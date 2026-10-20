@@ -14,7 +14,7 @@ module "pdn_instance_access_sg" {
   }
 
   providers = {
-    aws = aws.us-east-1
+    aws = aws
   }
 }
 
@@ -34,7 +34,7 @@ module "cyberark_instance_access_sg" {
   }
 
   providers = {
-    aws = aws.us-east-1
+    aws = aws
   }
 }
 
@@ -60,7 +60,7 @@ module "vpc_access_sg" {
   }
 
   providers = {
-    aws = aws.us-east-1
+    aws = aws
   }
 }
 
@@ -101,6 +101,6 @@ module "green_instances" {
   }
 
   providers = {
-    aws = aws.us-east-1
+    aws = aws
   }
 }

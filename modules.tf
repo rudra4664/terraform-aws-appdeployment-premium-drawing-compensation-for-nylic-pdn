@@ -4,7 +4,7 @@ module "global" {
   lob    = var.lob
 
   providers = {
-    aws.us-east-1 = aws.us-east-1
+    aws = aws.us-east-1
   }
 }
 
@@ -19,6 +19,6 @@ module "regional-us-east-1" {
   tags                            = var.tags
 
   providers = {
-    aws.us-east-1 = aws.us-east-1
+    aws = aws.us-east-1
   }
 }

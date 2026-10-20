@@ -134,9 +134,6 @@ locals {
         }
       }
 
-      "additional_vpc_cidrs" = [
-        "10.228.53.254/32",
-      ]
 
     }
   }
@@ -182,7 +179,7 @@ locals {
 
   vpc_cidrs = setunion(
     toset(data.aws_vpc.current.cidr_block_associations[*].cidr_block),
-    local.security_group_settings.additional_vpc_cidrs
+    var.additional_vpc_cidrs_by_account[data.aws_caller_identity.current.account_id]
   )
 
   vpc_ingress = {

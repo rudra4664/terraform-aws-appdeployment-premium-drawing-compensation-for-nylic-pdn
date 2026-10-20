@@ -34,3 +34,8 @@ variable "iam_instance_profile_name" {
   description = "IAM instance profile name."
   type        = string
 }
+
+variable "additional_vpc_cidrs_by_account" {
+  description = "Additional VPC access source CIDRs by AWS account."
+  type        = map(set(string))
+}

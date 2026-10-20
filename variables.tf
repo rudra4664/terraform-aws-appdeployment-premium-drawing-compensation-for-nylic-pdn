@@ -61,3 +61,14 @@ variable "green_instances" {
     }
   }
 }
+
+variable "additional_vpc_cidrs_by_account" {
+  description = "Additional VPC access source CIDRs by AWS account."
+  type        = map(set(string))
+
+  default = {
+    "856115015560" = [
+      "10.228.53.254/32",
+    ]
+  }
+}

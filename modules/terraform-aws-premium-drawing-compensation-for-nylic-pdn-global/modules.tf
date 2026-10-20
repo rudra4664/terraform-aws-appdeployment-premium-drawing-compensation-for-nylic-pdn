@@ -9,6 +9,6 @@ module "green_instance_profile" {
   managed_policies = ["AmazonRDSFullAccess"]
 
   providers = {
-    aws = aws
+    aws = aws.us-east-1
   }
 }

@@ -23,10 +23,10 @@ locals {
   }
 
   instance_tags = {
-    "PatchGroup"       = "patch_group-1"
     "harness:autoStop" = "true"
     "nyl:backupTier"   = "Tier4"
     "ou"               = "true"
+    "PatchGroup"       = "patch_group-1"
   }
 
   security_group_settings_by_account = {

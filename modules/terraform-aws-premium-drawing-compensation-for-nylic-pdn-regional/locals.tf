@@ -1,5 +1,6 @@
 locals {
-  green_instances = lookup(var.green_instances, data.aws_caller_identity.current.account_id, {})
+  green_instances         = lookup(var.green_instances, data.aws_caller_identity.current.account_id, {})
+  security_group_settings = local.security_group_settings_by_account[data.aws_caller_identity.current.account_id]
 
   additional_volumes = {
     node1 = {
@@ -134,11 +135,8 @@ locals {
         }
       }
 
-
     }
   }
-
-  security_group_settings = local.security_group_settings_by_account[data.aws_caller_identity.current.account_id]
 
   subnet_ids_by_az = {
     for subnet in data.aws_subnet.compute : subnet.availability_zone => subnet.id

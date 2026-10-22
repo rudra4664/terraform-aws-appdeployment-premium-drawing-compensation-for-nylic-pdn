@@ -20,13 +20,12 @@ variable "tags" {
   type        = map(string)
 
   default = {
-    appName         = "PDN"
-    component       = "cmf-webserver"
-    "map-migrated"  = "mig40012"
-    "nyl:provision" = "tfe"
-    platform        = "aws"
-    project         = "CloudMigration"
-    provider        = "aws"
+    appName        = "PDN"
+    component      = "cmf-webserver"
+    "map-migrated" = "mig40012"
+    platform       = "aws"
+    project        = "CloudMigration"
+    provider       = "aws"
   }
 }
 

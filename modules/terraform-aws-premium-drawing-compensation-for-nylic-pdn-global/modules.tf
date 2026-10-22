@@ -6,5 +6,5 @@ module "green_instance_profile" {
   lob              = var.lob
   name             = "PdnGreenInstanceProfile"
   organization_id  = "o-m8cxcbau0l"
-  managed_policies = ["AmazonRDSFullAccess"]
+  managed_policies = []
 }

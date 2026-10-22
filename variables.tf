@@ -9,6 +9,19 @@ variable "env" {
   type        = string
 }
 
+variable "key_names" {
+  description = "EC2 key pair by environment."
+  type        = map(string)
+
+  default = {
+    dev   = "NYL_CORPORATEVS_DEV_KEYPAIR",
+    prod  = null,
+    qa    = null,
+    stage = null,
+    test  = null,
+  }
+}
+
 variable "lob" {
   description = "Line of Business."
   type        = string

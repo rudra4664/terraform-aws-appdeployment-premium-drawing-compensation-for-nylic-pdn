@@ -1,6 +1,6 @@
 module "pdn_instance_access_sg" {
   source  = "app.terraform.io/NYL-Prod/apps-resources/aws//modules/terraform-aws-security-group"
-  version = "1.0.9"
+  version = "1.1.3"
   tf_org  = "NYL-Prod"
   appid   = var.appid
   tags    = local.tags
@@ -16,7 +16,7 @@ module "pdn_instance_access_sg" {
 
 module "cyberark_instance_access_sg" {
   source  = "app.terraform.io/NYL-Prod/apps-resources/aws//modules/terraform-aws-security-group"
-  version = "1.0.9"
+  version = "1.1.3"
   tf_org  = "NYL-Prod"
   appid   = var.appid
   tags    = local.tags
@@ -32,7 +32,7 @@ module "cyberark_instance_access_sg" {
 
 module "vpc_access_sg" {
   source  = "app.terraform.io/NYL-Prod/apps-resources/aws//modules/terraform-aws-security-group"
-  version = "1.0.9"
+  version = "1.1.3"
   tf_org  = "NYL-Prod"
   appid   = var.appid
   tags    = local.tags
@@ -55,7 +55,7 @@ module "vpc_access_sg" {
 module "green_instances" {
   for_each           = local.green_instances
   source             = "app.terraform.io/NYL-Prod/apps-resources/aws//modules/terraform-aws-ec2-instance"
-  version            = "1.0.9"
+  version            = "1.1.3"
   tf_org             = "NYL-Prod"
   appid              = var.appid
   env                = var.env
@@ -71,7 +71,7 @@ module "green_instances" {
   instance = {
     iam_instance_profile = var.iam_instance_profile_name
     instance_type        = "t3a.medium"
-    key_name             = "NYL_CORPORATEVS_DEV_KEYPAIR"
+    key_name             = var.key_name
     monitoring           = false
     name                 = each.value.name
     strategic_os_type    = each.value.strategic_os_type

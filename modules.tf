@@ -15,6 +15,7 @@ module "regional-us-east-1" {
   additional_vpc_cidrs      = var.additional_vpc_cidrs[var.env]
   green_instances           = var.green_instances
   iam_instance_profile_name = module.global.iam_instance_profile_name
+  key_name                  = var.key_names[var.env]
   lob                       = var.lob
   tags                      = var.tags
 

@@ -20,6 +20,11 @@ variable "green_instances" {
   })))
 }
 
+variable "key_name" {
+  description = "EC2 key pair name."
+  type        = string
+}
+
 variable "lob" {
   description = "Line of Business."
   type        = string

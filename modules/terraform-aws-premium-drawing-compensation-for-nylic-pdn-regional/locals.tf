@@ -177,7 +177,7 @@ locals {
 
   vpc_cidrs = setunion(
     toset(data.aws_vpc.current.cidr_block_associations[*].cidr_block),
-    var.additional_vpc_cidrs_by_account[data.aws_caller_identity.current.account_id]
+    var.additional_vpc_cidrs,
   )
 
   vpc_ingress = {

@@ -62,12 +62,12 @@ variable "green_instances" {
   }
 }
 
-variable "additional_vpc_cidrs_by_account" {
-  description = "Additional VPC access source CIDRs by AWS account."
+variable "additional_vpc_cidrs" {
+  description = "Additional VPC access source CIDRs by environment."
   type        = map(set(string))
 
   default = {
-    "856115015560" = [
+    dev = [
       "10.228.53.254/32",
     ]
   }

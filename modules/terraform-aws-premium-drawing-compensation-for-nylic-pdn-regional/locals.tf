@@ -24,7 +24,6 @@ locals {
 
   instance_tags = {
     "harness:autoStop" = "true"
-    "nyl:backupTier"   = "Tier4"
   }
 
   security_group_settings_by_account = {
@@ -132,7 +131,6 @@ locals {
           ]
         }
       }
-
     }
   }
 

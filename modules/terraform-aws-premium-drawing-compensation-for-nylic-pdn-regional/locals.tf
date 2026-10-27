@@ -8,7 +8,7 @@ locals {
         device_name = "/dev/sdf"
         size        = 100
         type        = "gp3"
-        snapshot_id = null
+        snapshot_id = "snap-04e35919c367c2c1c"
       }
     }
 
@@ -17,7 +17,7 @@ locals {
         device_name = "/dev/sdf"
         size        = 100
         type        = "gp3"
-        snapshot_id = null
+        snapshot_id = "snap-08e4111fe555b49b2"
       }
     }
   }

@@ -1,6 +1,6 @@
 module "pdn_instance_access_sg" {
   source  = "app.terraform.io/NYL-Prod/apps-resources/aws//modules/terraform-aws-security-group"
-  version = "1.1.3"
+  version = "1.1.4"
   tf_org  = "NYL-Prod"
   appid   = var.appid
   tags    = local.tags
@@ -16,7 +16,7 @@ module "pdn_instance_access_sg" {
 
 module "cyberark_instance_access_sg" {
   source  = "app.terraform.io/NYL-Prod/apps-resources/aws//modules/terraform-aws-security-group"
-  version = "1.1.3"
+  version = "1.1.4"
   tf_org  = "NYL-Prod"
   appid   = var.appid
   tags    = local.tags
@@ -32,7 +32,7 @@ module "cyberark_instance_access_sg" {
 
 module "vpc_access_sg" {
   source  = "app.terraform.io/NYL-Prod/apps-resources/aws//modules/terraform-aws-security-group"
-  version = "1.1.3"
+  version = "1.1.4"
   tf_org  = "NYL-Prod"
   appid   = var.appid
   tags    = local.tags
@@ -55,7 +55,7 @@ module "vpc_access_sg" {
 module "green_instances" {
   for_each           = local.green_instances
   source             = "app.terraform.io/NYL-Prod/apps-resources/aws//modules/terraform-aws-ec2-instance"
-  version            = "1.1.3"
+  version            = "1.1.4"
   tf_org             = "NYL-Prod"
   appid              = var.appid
   env                = var.env

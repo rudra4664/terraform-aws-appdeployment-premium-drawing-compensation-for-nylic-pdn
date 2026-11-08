@@ -1,0 +1,261 @@
+{
+  "Attachments": [
+    {
+      "AssociatedResource": null,
+      "AttachTime": "2024-08-23T15:26:37Z",
+      "DeleteOnTermination": false,
+      "Device": "/dev/sda1",
+      "EbsCardIndex": 0,
+      "InstanceId": "i-07557a5878f7d6beb",
+      "InstanceOwningService": null,
+      "State": "attached",
+      "VolumeId": "vol-03b0058bc7e74d5a2"
+    }
+  ],
+  "AvailabilityZone": "us-east-1a",
+  "AvailabilityZoneId": "use1-az6",
+  "CreateTime": "2024-08-23T15:21:37.647Z",
+  "Encrypted": true,
+  "FastRestored": null,
+  "Iops": 3000,
+  "KmsKeyId": "arn:aws:kms:us-east-1:211125733068:key/9f53445d-bdd2-4bbb-b10e-76a0847d0bce",
+  "LastEBSSnapshotInfo": {
+    "AvailabilityZone": null,
+    "CompletionDurationMinutes": null,
+    "CompletionTime": "2026-11-04T22:09:39.327Z",
+    "DataEncryptionKeyId": null,
+    "Description": "Created by CreateImage(i-07557a5878f7d6beb) for ami-0b9bc38449e99bfca",
+    "Encrypted": true,
+    "FullSnapshotSizeInBytes": 80530636800,
+    "KmsKeyId": "arn:aws:kms:us-east-1:211125733068:key/9f53445d-bdd2-4bbb-b10e-76a0847d0bce",
+    "OutpostArn": null,
+    "OwnerAlias": null,
+    "OwnerId": "211125733068",
+    "Progress": "100%",
+    "RestoreExpiryTime": null,
+    "SnapshotId": "snap-0390d5cf50f9f72ff",
+    "SseType": "",
+    "StartTime": "2026-11-04T22:07:50.066Z",
+    "State": "completed",
+    "StateMessage": null,
+    "StorageTier": "standard",
+    "Tags": [
+      {
+        "Key": "AWSApplicationMigrationServiceSourceServerID",
+        "Value": "s-30c34a35ca9a272d2"
+      },
+      {
+        "Key": "cloudaware:PatchingMaintenance",
+        "Value": "1"
+      },
+      {
+        "Key": "nyl:platform:backupManaged",
+        "Value": "true"
+      },
+      {
+        "Key": "gig-backup",
+        "Value": "31d-0w-0m"
+      },
+      {
+        "Key": "nyl:platform:backupTier",
+        "Value": "Disabled"
+      },
+      {
+        "Key": "platform",
+        "Value": "mgn"
+      },
+      {
+        "Key": "nyl:platform:environment",
+        "Value": "prod"
+      },
+      {
+        "Key": "application",
+        "Value": "Hearsay social"
+      },
+      {
+        "Key": "Patch Group",
+        "Value": "patch_group-1"
+      },
+      {
+        "Key": "aws:backup:source-resource",
+        "Value": "i-07557a5878f7d6beb:5143E8FA-D5F2-6CCC-9C8F-B936F5A2BF29"
+      },
+      {
+        "Key": "datatype",
+        "Value": "Business Confidential"
+      },
+      {
+        "Key": "appid",
+        "Value": "APP-870"
+      },
+      {
+        "Key": "provider",
+        "Value": "aws"
+      },
+      {
+        "Key": "ServerStatus",
+        "Value": "Cutover"
+      },
+      {
+        "Key": "Name",
+        "Value": "ap31p0252"
+      },
+      {
+        "Key": "env",
+        "Value": "prod"
+      },
+      {
+        "Key": "project",
+        "Value": "Cloud Migration"
+      },
+      {
+        "Key": "map-migrated",
+        "Value": "mig40012"
+      },
+      {
+        "Key": "nyl:appid",
+        "Value": "APP-870"
+      },
+      {
+        "Key": "AWSApplicationMigrationServiceManaged",
+        "Value": "mgn.amazonaws.com"
+      },
+      {
+        "Key": "lob",
+        "Value": "clientprosvs"
+      }
+    ],
+    "TransferType": "standard",
+    "VolumeId": "vol-03b0058bc7e74d5a2",
+    "VolumeSize": 75
+  },
+  "MultiAttachEnabled": false,
+  "Operator": {
+    "HiddenByDefault": false,
+    "Managed": false,
+    "Principal": null
+  },
+  "OutpostArn": null,
+  "Size": 75,
+  "SnapshotId": "snap-0efbe2fb847e954d3",
+  "SourceVolumeId": null,
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+    {
+      "Key": "Patch Group",
+      "Value": "patch_group-1"
+    },
+    {
+      "Key": "application",
+      "Value": "Hearsay social"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-870"
+    },
+    {
+      "Key": "ServerStatus",
+      "Value": "Cutover"
+    },
+    {
+      "Key": "datatype",
+      "Value": "Business Confidential"
+    },
+    {
+      "Key": "gig-backup",
+      "Value": "31d-0w-0m"
+    },
+    {
+      "Key": "nyl:platform:backupTier",
+      "Value": "Disabled"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-870"
+    },
+    {
+      "Key": "platform",
+      "Value": "mgn"
+    },
+    {
+      "Key": "AWSApplicationMigrationServiceManaged",
+      "Value": "mgn.amazonaws.com"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "prod"
+    },
+    {
+      "Key": "Name",
+      "Value": "ap31p0252"
+    },
+    {
+      "Key": "AWSApplicationMigrationServiceSourceServerID",
+      "Value": "s-30c34a35ca9a272d2"
+    },
+    {
+      "Key": "cloudaware:PatchingMaintenance",
+      "Value": "1"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "map-migrated",
+      "Value": "mig40012"
+    },
+    {
+      "Key": "env",
+      "Value": "prod"
+    },
+    {
+      "Key": "project",
+      "Value": "Cloud Migration"
+    }
+  ],
+  "Throughput": 125,
+  "VolumeId": "vol-03b0058bc7e74d5a2",
+  "VolumeInitializationRate": null,
+  "VolumeSnapshotsLimitReached": false,
+  "VolumeType": "gp3",
+  "encryptionKeyMetadata": {
+    "AWSAccountId": "211125733068",
+    "Arn": "arn:aws:kms:us-east-1:211125733068:key/9f53445d-bdd2-4bbb-b10e-76a0847d0bce",
+    "CloudHsmClusterId": null,
+    "CreationDate": "2024-04-29T16:32:24.481Z",
+    "CustomKeyStoreId": null,
+    "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
+    "DeletionDate": null,
+    "Description": "Default key that protects my EBS volumes when no other key is defined",
+    "Enabled": true,
+    "EncryptionAlgorithms": [
+      "SYMMETRIC_DEFAULT"
+    ],
+    "ExpirationModel": "",
+    "KeyAgreementAlgorithms": null,
+    "KeyId": "9f53445d-bdd2-4bbb-b10e-76a0847d0bce",
+    "KeyManager": "AWS",
+    "KeySpec": "SYMMETRIC_DEFAULT",
+    "KeyState": "Enabled",
+    "KeyUsage": "ENCRYPT_DECRYPT",
+    "MacAlgorithms": null,
+    "MultiRegion": false,
+    "MultiRegionConfiguration": null,
+    "Origin": "AWS_KMS",
+    "PendingDeletionWindowInDays": null,
+    "SigningAlgorithms": null,
+    "ValidTo": null,
+    "XksKeyConfiguration": null
+  },
+  "WizMetadata": {
+    "externalId": "vol-03b0058bc7e74d5a2",
+    "nativeType": "volume",
+    "region": "us-east-1"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "AccountID": "211125733068",
+  "Description": "Allows access between resources within VPC CIDR",
+  "GroupId": "sg-004c7ac8ce9a16192",
+  "GroupName": "nyl-clientprosvs-prod-vpc-access-sg",
+  "IpPermissions": [
+    {
+      "FromPort": null,
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "10.229.168.0/22",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": null,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "IpPermissionsEgress": [
+    {
+      "FromPort": null,
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": null,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "OwnerId": "211125733068",
+  "SecurityGroupArn": "arn:aws:ec2:us-east-1:211125733068:security-group/sg-004c7ac8ce9a16192",
+  "Tags": [
+    {
+      "Key": "description",
+      "Value": "Allows access between resources within VPC CIDR"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "prod"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "Updation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "SRB",
+      "Value": "SRB0003554"
+    },
+    {
+      "Key": "env",
+      "Value": "prod"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "Name",
+      "Value": "nyl-clientprosvs-prod-vpc-access-sg"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "Creation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    }
+  ],
+  "VpcId": "vpc-08116e00edac748ae",
+  "WizMetadata": {
+    "externalId": "sg-004c7ac8ce9a16192",
+    "nativeType": "securityGroup",
+    "region": "us-east-1"
+  }
+}

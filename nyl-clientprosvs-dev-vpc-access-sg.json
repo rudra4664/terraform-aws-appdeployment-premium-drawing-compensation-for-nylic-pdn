@@ -1,0 +1,106 @@
+{
+  "AccountID": "073678946889",
+  "Description": "Allows access between resources within VPC CIDR",
+  "GroupId": "sg-0b6fdca9e56b4ee28",
+  "GroupName": "nyl-clientprosvs-dev-vpc-access-sg",
+  "IpPermissions": [
+    {
+      "FromPort": null,
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "10.228.40.0/22",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": null,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 443,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.233.46.0/23",
+          "Description": "Harness CIDR"
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 443,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "IpPermissionsEgress": [
+    {
+      "FromPort": null,
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": null,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "OwnerId": "073678946889",
+  "SecurityGroupArn": "arn:aws:ec2:us-east-1:073678946889:security-group/sg-0b6fdca9e56b4ee28",
+  "Tags": [
+    {
+      "Key": "Creation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "SRB",
+      "Value": "SRB0003554"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "dev"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "Name",
+      "Value": "nyl-clientprosvs-dev-vpc-access-sg"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "env",
+      "Value": "dev"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "Updation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "description",
+      "Value": "Allows access between resources within VPC CIDR"
+    }
+  ],
+  "VpcId": "vpc-075128229ed32b744",
+  "WizMetadata": {
+    "externalId": "sg-0b6fdca9e56b4ee28",
+    "nativeType": "securityGroup",
+    "region": "us-east-1"
+  }
+}

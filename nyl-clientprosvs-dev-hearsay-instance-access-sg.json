@@ -1,0 +1,701 @@
+{
+  "AccountID": "073678946889",
+  "Description": "SG for hearsay application",
+  "GroupId": "sg-0a50f7a4973229733",
+  "GroupName": "nyl-clientprosvs-dev-hearsay-instance-access-sg",
+  "IpPermissions": [
+    {
+      "FromPort": 8000,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.13.13.10/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.110/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.114/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.134/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.138/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.14/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.142/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.226/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.34/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.38/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.42/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.46/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.50/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.54/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.34.30.0/23",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.223.24/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.223.25/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.40.84.177/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.40.84.178/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.130/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.138/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.144/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.149/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.158/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.160/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.163/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.208/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.215/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.216/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.240/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.28/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.145/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.162/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.53/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.57/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.78/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.87/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.121/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.140/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.149/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.157/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.161/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.25/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.83/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.72.84.27/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.72.84.28/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 8000,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 22,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.32.26/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 22,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 7520,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.13.13.10/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.110/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.114/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.134/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.138/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.14/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.142/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.226/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.34/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.38/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.42/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.46/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.50/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.54/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.34.30.0/23",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.223.24/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.223.25/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.40.84.177/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.40.84.178/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.130/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.138/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.144/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.149/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.158/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.160/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.163/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.208/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.215/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.216/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.240/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.28/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.145/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.162/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.53/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.57/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.78/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.87/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.121/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.140/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.149/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.157/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.161/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.25/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.83/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.72.84.27/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.72.84.28/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 7520,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 5986,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.32.26/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 5986,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 8005,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.13.13.10/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.110/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.114/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.134/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.138/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.14/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.142/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.13.226/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.34/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.38/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.42/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.46/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.50/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.13.8.54/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.34.30.0/23",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.223.24/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.223.25/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.40.84.177/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.40.84.178/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.130/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.138/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.144/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.149/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.158/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.160/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.163/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.208/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.215/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.216/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.240/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.253.28/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.145/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.162/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.53/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.57/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.78/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.254.87/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.121/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.140/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.149/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.157/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.161/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.25/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.47.255.83/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.72.84.27/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.72.84.28/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 8005,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 443,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.32.26/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 443,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 5985,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.32.26/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 5985,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "IpPermissionsEgress": [],
+  "OwnerId": "073678946889",
+  "SecurityGroupArn": "arn:aws:ec2:us-east-1:073678946889:security-group/sg-0a50f7a4973229733",
+  "Tags": [
+    {
+      "Key": "SRB",
+      "Value": "SRB0003554"
+    },
+    {
+      "Key": "Updation_date",
+      "Value": "06/26/2024"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "dev"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "Name",
+      "Value": "nyl-clientprosvs-dev-hearsay-instance-access-sg"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "Creation_date",
+      "Value": "06/26/2024"
+    },
+    {
+      "Key": "description",
+      "Value": "SG for hearsay application"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "env",
+      "Value": "dev"
+    }
+  ],
+  "VpcId": "vpc-075128229ed32b744",
+  "WizMetadata": {
+    "externalId": "sg-0a50f7a4973229733",
+    "nativeType": "securityGroup",
+    "region": "us-east-1"
+  }
+}

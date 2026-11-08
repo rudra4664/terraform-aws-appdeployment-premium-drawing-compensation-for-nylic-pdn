@@ -1,0 +1,105 @@
+{
+  "AccountID": "073678946889",
+  "Description": "Allow 3389 port to Onprem cidr range for connecting to servers from VDA/VDZ",
+  "GroupId": "sg-01ca293f1121c0de3",
+  "GroupName": "nyl-clientprosvs-dev-onprem-win-access-sg",
+  "IpPermissions": [
+    {
+      "FromPort": 5986,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.0.0.0/8",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 5986,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 3389,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.0.0.0/8",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 3389,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 5985,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.0.0.0/8",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 5985,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "IpPermissionsEgress": [],
+  "OwnerId": "073678946889",
+  "SecurityGroupArn": "arn:aws:ec2:us-east-1:073678946889:security-group/sg-01ca293f1121c0de3",
+  "Tags": [
+    {
+      "Key": "env",
+      "Value": "dev"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "Creation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "Name",
+      "Value": "nyl-clientprosvs-dev-onprem-win-access-sg"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "SRB",
+      "Value": "SRB0003554"
+    },
+    {
+      "Key": "Updation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "description",
+      "Value": "Allow 3389 port to Onprem cidr range for connecting to servers from VDA/VDZ"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "dev"
+    }
+  ],
+  "VpcId": "vpc-075128229ed32b744",
+  "WizMetadata": {
+    "externalId": "sg-01ca293f1121c0de3",
+    "nativeType": "securityGroup",
+    "region": "us-east-1"
+  }
+}

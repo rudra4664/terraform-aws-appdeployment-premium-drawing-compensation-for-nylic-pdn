@@ -1,0 +1,303 @@
+{
+  "AccountID": "211125733068",
+  "Description": "Cyberark SG to allow few ports for cyberark access",
+  "GroupId": "sg-0df60a894de42d23d",
+  "GroupName": "nyl-clientprosvs-prod-cyberark-instance-access-sg",
+  "IpPermissions": [
+    {
+      "FromPort": 135,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.24.199/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.24.117/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.6.0.0/19",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.0.0/19",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.148/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.17.67/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 135,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 3389,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.184.6.0/24",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.32.19/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.32.30/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.36.33/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.188.29.0/24",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.24.198/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.24.199/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.28.41/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.24.116/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.24.117/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.28.21/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.186.29.0/24",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.53/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.55/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.143/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.144/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.145/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.148/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.20.47/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.20.48/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.16.103/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.17.38/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.17.59/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.17.60/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.17.61/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.17.67/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.20.99/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.20.100/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.162.32.230/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.162.32.231/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.6.0.0/19",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.0.0/19",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 3389,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 445,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.24.199/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.24.117/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.6.0.0/19",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.0.0/19",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.148/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.17.67/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 445,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 1024,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.24.199/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.24.117/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.6.0.0/19",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.7.0.0/19",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.41.16.148/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.73.17.67/32",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 65535,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "IpPermissionsEgress": [],
+  "OwnerId": "211125733068",
+  "SecurityGroupArn": "arn:aws:ec2:us-east-1:211125733068:security-group/sg-0df60a894de42d23d",
+  "Tags": [
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "Creation_date",
+      "Value": "03/28/2024"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "prod"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "env",
+      "Value": "prod"
+    },
+    {
+      "Key": "description",
+      "Value": "Cyberark SG to allow few ports for cyberark access"
+    },
+    {
+      "Key": "SRB",
+      "Value": "SRB0003554"
+    },
+    {
+      "Key": "Updation_date",
+      "Value": "03/28/2024"
+    },
+    {
+      "Key": "Name",
+      "Value": "nyl-clientprosvs-prod-cyberark-instance-access-sg"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-13853"
+    }
+  ],
+  "VpcId": "vpc-08116e00edac748ae",
+  "WizMetadata": {
+    "externalId": "sg-0df60a894de42d23d",
+    "nativeType": "securityGroup",
+    "region": "us-east-1"
+  }
+}

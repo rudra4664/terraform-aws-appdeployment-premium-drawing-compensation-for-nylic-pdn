@@ -1,0 +1,135 @@
+{
+  "AccountID": "631186050369",
+  "Description": "SG for hearsay application",
+  "GroupId": "sg-049f50ac990c0d03a",
+  "GroupName": "nyl-clientprosvs-qa-hearsay-instance-access-sg",
+  "IpPermissions": [
+    {
+      "FromPort": 22,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.24.47/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.186.19.0/24",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 22,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 5986,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.24.47/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.186.19.0/24",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 5986,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 443,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.24.47/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.186.19.0/24",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 443,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 5985,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.41.24.47/32",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.186.19.0/24",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 5985,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "IpPermissionsEgress": [],
+  "OwnerId": "631186050369",
+  "SecurityGroupArn": "arn:aws:ec2:us-east-1:631186050369:security-group/sg-049f50ac990c0d03a",
+  "Tags": [
+    {
+      "Key": "Name",
+      "Value": "nyl-clientprosvs-qa-hearsay-instance-access-sg"
+    },
+    {
+      "Key": "description",
+      "Value": "SG for hearsay application"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "qa"
+    },
+    {
+      "Key": "Creation_date",
+      "Value": "06/26/2024"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "SRB",
+      "Value": "SRB0003554"
+    },
+    {
+      "Key": "Updation_date",
+      "Value": "06/26/2024"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "env",
+      "Value": "qa"
+    }
+  ],
+  "VpcId": "vpc-001875d07065ab6f2",
+  "WizMetadata": {
+    "externalId": "sg-049f50ac990c0d03a",
+    "nativeType": "securityGroup",
+    "region": "us-east-1"
+  }
+}

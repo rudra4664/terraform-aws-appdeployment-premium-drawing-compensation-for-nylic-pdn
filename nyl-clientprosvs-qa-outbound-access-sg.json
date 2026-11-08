@@ -1,0 +1,106 @@
+{
+  "AccountID": "631186050369",
+  "Description": "This has only Oubtbound Rule on all traffic",
+  "GroupId": "sg-03d8373586d1e9619",
+  "GroupName": "nyl-clientprosvs-qa-outbound-access-sg",
+  "IpPermissions": [
+    {
+      "FromPort": -1,
+      "IpProtocol": "icmp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.0.0.0/8",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": -1,
+      "UserIdGroupPairs": []
+    },
+    {
+      "FromPort": 3389,
+      "IpProtocol": "tcp",
+      "IpRanges": [
+        {
+          "CidrIp": "10.0.0.0/8",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 3389,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "IpPermissionsEgress": [
+    {
+      "FromPort": null,
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": null,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "OwnerId": "631186050369",
+  "SecurityGroupArn": "arn:aws:ec2:us-east-1:631186050369:security-group/sg-03d8373586d1e9619",
+  "Tags": [
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "Updation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "Name",
+      "Value": "nyl-clientprosvs-qa-outbound-access-sg"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "SRB",
+      "Value": "SRB0003554"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "description",
+      "Value": "This has only Oubtbound Rule on all traffic"
+    },
+    {
+      "Key": "Creation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "qa"
+    },
+    {
+      "Key": "env",
+      "Value": "qa"
+    }
+  ],
+  "VpcId": "vpc-001875d07065ab6f2",
+  "WizMetadata": {
+    "externalId": "sg-03d8373586d1e9619",
+    "nativeType": "securityGroup",
+    "region": "us-east-1"
+  }
+}

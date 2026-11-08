@@ -1,0 +1,96 @@
+{
+  "AccountID": "631186050369",
+  "Description": "Allows access between resources within VPC CIDR",
+  "GroupId": "sg-0a280e6bf78b7983a",
+  "GroupName": "nyl-clientprosvs-qa-vpc-access-sg",
+  "IpPermissions": [
+    {
+      "FromPort": null,
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "10.228.168.0/22",
+          "Description": null
+        },
+        {
+          "CidrIp": "10.236.46.0/23",
+          "Description": "Harness QA CIDR"
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": null,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "IpPermissionsEgress": [
+    {
+      "FromPort": null,
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "0.0.0.0/0",
+          "Description": null
+        }
+      ],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": null,
+      "UserIdGroupPairs": []
+    }
+  ],
+  "OwnerId": "631186050369",
+  "SecurityGroupArn": "arn:aws:ec2:us-east-1:631186050369:security-group/sg-0a280e6bf78b7983a",
+  "Tags": [
+    {
+      "Key": "Name",
+      "Value": "nyl-clientprosvs-qa-vpc-access-sg"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "qa"
+    },
+    {
+      "Key": "Creation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "env",
+      "Value": "qa"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-13853"
+    },
+    {
+      "Key": "SRB",
+      "Value": "SRB0003554"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "Updation_date",
+      "Value": "07/12/2023"
+    },
+    {
+      "Key": "description",
+      "Value": "Allows access between resources within VPC CIDR"
+    }
+  ],
+  "VpcId": "vpc-001875d07065ab6f2",
+  "WizMetadata": {
+    "externalId": "sg-0a280e6bf78b7983a",
+    "nativeType": "securityGroup",
+    "region": "us-east-1"
+  }
+}

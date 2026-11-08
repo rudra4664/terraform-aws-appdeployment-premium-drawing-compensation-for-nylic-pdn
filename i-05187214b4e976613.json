@@ -1,0 +1,456 @@
+{
+  "AmiLaunchIndex": 0,
+  "Architecture": "x86_64",
+  "BlockDeviceMappings": [
+    {
+      "DeviceName": "/dev/sda1",
+      "Ebs": {
+        "AssociatedResource": null,
+        "AttachTime": "2024-06-25T03:27:26Z",
+        "DeleteOnTermination": false,
+        "EbsCardIndex": 0,
+        "Operator": null,
+        "Status": "attached",
+        "VolumeId": "vol-043307175d8d8e8c1",
+        "VolumeOwnerId": null
+      }
+    },
+    {
+      "DeviceName": "/dev/sdb",
+      "Ebs": {
+        "AssociatedResource": null,
+        "AttachTime": "2024-06-25T03:27:27.364Z",
+        "DeleteOnTermination": false,
+        "EbsCardIndex": 0,
+        "Operator": null,
+        "Status": "attached",
+        "VolumeId": "vol-0e35ce1930fd97681",
+        "VolumeOwnerId": null
+      }
+    }
+  ],
+  "BootMode": "",
+  "BranchedNics": null,
+  "CapacityBlockId": null,
+  "CapacityReservationId": null,
+  "CapacityReservationSpecification": {
+    "CapacityReservationPreference": "open",
+    "CapacityReservationTarget": null
+  },
+  "ClientToken": "8af526fc-067f-4429-97fb-f890e32e031b",
+  "CpuOptions": {
+    "AmdSevSnp": "",
+    "CoreCount": 1,
+    "NestedVirtualization": "",
+    "ThreadsPerCore": 2
+  },
+  "CurrentInstanceBootMode": "legacy-bios",
+  "DisableApiStop": null,
+  "DisableApiTermination": null,
+  "EbsOptimized": true,
+  "ElasticGpuAssociations": null,
+  "ElasticInferenceAcceleratorAssociations": null,
+  "EnaSupport": true,
+  "EnclaveOptions": {
+    "Enabled": false
+  },
+  "HasUserData": null,
+  "HibernationOptions": {
+    "Configured": false
+  },
+  "Hypervisor": "xen",
+  "IamInstanceProfile": {
+    "Arn": "arn:aws:iam::073678946889:instance-profile/clientprosvs-dev-hearsay-instance-profile",
+    "Id": "AIPARCJ43QJER6YFTHBS3"
+  },
+  "IamRoleArn": {
+    "Arn": "arn:aws:iam::073678946889:role/application/nyl-clientprosvs-dev-hearsay-instance-role",
+    "Id": "AROARCJ43QJERJPXMURVL"
+  },
+  "ImageId": "ami-0f534974106934085",
+  "InstanceId": "i-05187214b4e976613",
+  "InstanceInitiatedShutdownBehavior": null,
+  "InstanceLifecycle": "",
+  "InstanceStatuses": {
+    "AttachedEbsStatus": {
+      "Details": [
+        {
+          "ImpairedSince": null,
+          "Name": "reachability",
+          "Status": "passed"
+        }
+      ],
+      "Status": "ok"
+    },
+    "AvailabilityZone": "us-east-1a",
+    "AvailabilityZoneId": "use1-az4",
+    "Events": null,
+    "InstanceId": "i-05187214b4e976613",
+    "InstanceState": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "InstanceStatus": {
+      "Details": [
+        {
+          "ImpairedSince": null,
+          "Name": "reachability",
+          "Status": "passed"
+        }
+      ],
+      "Status": "ok"
+    },
+    "Operator": {
+      "HiddenByDefault": false,
+      "Managed": false,
+      "Principal": null
+    },
+    "OutpostArn": null,
+    "SystemStatus": {
+      "Details": [
+        {
+          "ImpairedSince": null,
+          "Name": "reachability",
+          "Status": "passed"
+        }
+      ],
+      "Status": "ok"
+    }
+  },
+  "InstanceType": "t3.medium",
+  "Ipv6Address": null,
+  "KernelId": null,
+  "KeyName": null,
+  "LaunchTime": "2026-11-04T03:00:02Z",
+  "Licenses": null,
+  "MaintenanceOptions": {
+    "AutoRecovery": "default",
+    "RebootMigration": "default"
+  },
+  "MetadataOptions": {
+    "HttpEndpoint": "enabled",
+    "HttpProtocolIpv6": "disabled",
+    "HttpPutResponseHopLimit": 2,
+    "HttpTokens": "required",
+    "InstanceMetadataTags": "disabled",
+    "State": "applied"
+  },
+  "Monitoring": {
+    "State": "disabled"
+  },
+  "NetworkInterfaces": [
+    {
+      "Association": null,
+      "Attachment": {
+        "AttachTime": "2024-06-25T03:22:20Z",
+        "AttachmentId": "eni-attach-02ca525726deaf700",
+        "DeleteOnTermination": true,
+        "DeviceIndex": 0,
+        "EnaQueueCount": null,
+        "EnaSrdSpecification": null,
+        "NetworkCardIndex": 0,
+        "Status": "attached"
+      },
+      "ConnectionTrackingConfiguration": null,
+      "Description": "",
+      "Groups": [
+        {
+          "GroupId": "sg-0ac74b1d2aed320e1",
+          "GroupName": "nyl-clientprosvs-dev-cyberark-instance-access-sg"
+        },
+        {
+          "GroupId": "sg-0b6fdca9e56b4ee28",
+          "GroupName": "nyl-clientprosvs-dev-vpc-access-sg"
+        },
+        {
+          "GroupId": "sg-0a50f7a4973229733",
+          "GroupName": "nyl-clientprosvs-dev-hearsay-instance-access-sg"
+        },
+        {
+          "GroupId": "sg-01ca293f1121c0de3",
+          "GroupName": "nyl-clientprosvs-dev-onprem-win-access-sg"
+        }
+      ],
+      "InterfaceType": "interface",
+      "Ipv4Prefixes": null,
+      "Ipv6Addresses": [],
+      "Ipv6Prefixes": null,
+      "MacAddress": "0a:ff:da:13:6d:77",
+      "NetworkInterfaceId": "eni-0720729d551f50b60",
+      "Operator": {
+        "HiddenByDefault": null,
+        "Managed": false,
+        "Principal": null
+      },
+      "OwnerId": "073678946889",
+      "PrivateDnsName": "ip-10-228-41-193.ec2.internal",
+      "PrivateIpAddress": "10.228.41.193",
+      "PrivateIpAddresses": [
+        {
+          "Association": null,
+          "Primary": true,
+          "PrivateDnsName": "ip-10-228-41-193.ec2.internal",
+          "PrivateIpAddress": "10.228.41.193"
+        }
+      ],
+      "SourceDestCheck": true,
+      "Status": "in-use",
+      "SubnetId": "subnet-0d4a0bfdef4ba6732",
+      "VpcId": "vpc-075128229ed32b744"
+    }
+  ],
+  "NetworkPerformanceOptions": {
+    "BandwidthWeighting": "default"
+  },
+  "Operator": {
+    "HiddenByDefault": false,
+    "Managed": false,
+    "Principal": null
+  },
+  "OutpostArn": null,
+  "OwnerId": "073678946889",
+  "Placement": {
+    "Affinity": null,
+    "AvailabilityZone": "us-east-1a",
+    "AvailabilityZoneId": "use1-az4",
+    "GroupId": null,
+    "GroupName": "",
+    "HostId": null,
+    "HostResourceGroupArn": null,
+    "PartitionNumber": null,
+    "SpreadDomain": null,
+    "Tenancy": "default"
+  },
+  "Platform": "windows",
+  "PlatformDetails": "Windows",
+  "PrivateDnsName": "ip-10-228-41-193.ec2.internal",
+  "PrivateDnsNameOptions": {
+    "EnableResourceNameDnsAAAARecord": false,
+    "EnableResourceNameDnsARecord": false,
+    "HostnameType": "ip-name"
+  },
+  "PrivateIpAddress": "10.228.41.193",
+  "ProductCodes": [],
+  "PublicDnsName": "",
+  "PublicIpAddress": null,
+  "RamdiskId": null,
+  "RootDeviceName": "/dev/sda1",
+  "RootDeviceType": "ebs",
+  "SecondaryInterfaces": [],
+  "SecurityGroups": [
+    {
+      "GroupId": "sg-0ac74b1d2aed320e1",
+      "GroupName": "nyl-clientprosvs-dev-cyberark-instance-access-sg"
+    },
+    {
+      "GroupId": "sg-0b6fdca9e56b4ee28",
+      "GroupName": "nyl-clientprosvs-dev-vpc-access-sg"
+    },
+    {
+      "GroupId": "sg-0a50f7a4973229733",
+      "GroupName": "nyl-clientprosvs-dev-hearsay-instance-access-sg"
+    },
+    {
+      "GroupId": "sg-01ca293f1121c0de3",
+      "GroupName": "nyl-clientprosvs-dev-onprem-win-access-sg"
+    }
+  ],
+  "SourceDestCheck": true,
+  "SpotInstanceRequestId": null,
+  "SriovNetSupport": null,
+  "SsmComplianceItems": [
+    {
+      "ComplianceType": "Association",
+      "CompliantSummary": {
+        "CompliantCount": 2,
+        "SeveritySummary": {
+          "CriticalCount": 0,
+          "HighCount": 0,
+          "InformationalCount": 0,
+          "LowCount": 0,
+          "MediumCount": 0,
+          "UnspecifiedCount": 2
+        }
+      },
+      "ExecutionSummary": {
+        "ExecutionId": null,
+        "ExecutionTime": "2026-11-04T04:39:12Z",
+        "ExecutionType": null
+      },
+      "NonCompliantSummary": {
+        "NonCompliantCount": 0,
+        "SeveritySummary": {
+          "CriticalCount": 0,
+          "HighCount": 0,
+          "InformationalCount": 0,
+          "LowCount": 0,
+          "MediumCount": 0,
+          "UnspecifiedCount": 0
+        }
+      },
+      "OverallSeverity": "UNSPECIFIED",
+      "ResourceId": "i-05187214b4e976613",
+      "ResourceType": "ManagedInstance",
+      "Status": "COMPLIANT"
+    }
+  ],
+  "SsmInstanceInformation": {
+    "ActivationId": null,
+    "AgentVersion": "3.3.484.0",
+    "AssociationOverview": {
+      "DetailedStatus": "Success",
+      "InstanceAssociationStatusAggregatedCount": {
+        "Success": 2
+      }
+    },
+    "AssociationStatus": "Success",
+    "ComputerName": "ap31d0163.NYLDEV.NTLAB.NEWYORKLIFE.com",
+    "IPAddress": "10.228.41.193",
+    "IamRole": null,
+    "InstanceId": "i-05187214b4e976613",
+    "IsLatestVersion": false,
+    "LastAssociationExecutionDate": "2026-11-04T04:33:13.769Z",
+    "LastPingDateTime": "2026-11-04T06:37:28.247Z",
+    "LastSuccessfulAssociationExecutionDate": "2026-11-04T04:33:13.769Z",
+    "Name": null,
+    "PingStatus": "Online",
+    "PlatformName": "Microsoft Windows Server 2016 Datacenter",
+    "PlatformType": "Windows",
+    "PlatformVersion": "10.0.14393",
+    "RegistrationDate": null,
+    "ResourceType": "EC2Instance",
+    "SourceId": "i-05187214b4e976613",
+    "SourceType": "AWS::EC2::Instance"
+  },
+  "State": {
+    "Code": 16,
+    "Name": "running"
+  },
+  "StateReason": null,
+  "StateTransitionReason": "",
+  "SubnetId": "subnet-0d4a0bfdef4ba6732",
+  "Tags": [
+    {
+      "Key": "nyl:platform:environment",
+      "Value": "dev"
+    },
+    {
+      "Key": "harness:autoStop",
+      "Value": "true"
+    },
+    {
+      "Key": "cloudaware:PatchingMaintenance",
+      "Value": "UpToDate"
+    },
+    {
+      "Key": "Name",
+      "Value": "ap31d0163"
+    },
+    {
+      "Key": "cloudaware:scheduler",
+      "Value": "tz=America/New_York default=22-17 fri=0-17 sat=off sun=off"
+    },
+    {
+      "Key": "appName",
+      "Value": "Cloud Migration"
+    },
+    {
+      "Key": "component",
+      "Value": "mgn"
+    },
+    {
+      "Key": "mgn.amazonaws.com-job",
+      "Value": "mgnjob-32941e177ff3ade68"
+    },
+    {
+      "Key": "aws:ec2launchtemplate:version",
+      "Value": "9"
+    },
+    {
+      "Key": "appid",
+      "Value": "APP-870"
+    },
+    {
+      "Key": "env",
+      "Value": "dev"
+    },
+    {
+      "Key": "map-migrated",
+      "Value": "mig40012"
+    },
+    {
+      "Key": "mgn.amazonaws.com-source-server",
+      "Value": "s-343506867eb0b45d7"
+    },
+    {
+      "Key": "nyl:platform:backupTier",
+      "Value": "Tier4"
+    },
+    {
+      "Key": "AWSApplicationMigrationServiceManaged",
+      "Value": "mgn.amazonaws.com"
+    },
+    {
+      "Key": "platform",
+      "Value": "mgn"
+    },
+    {
+      "Key": "Patch Group",
+      "Value": "patch_group-1"
+    },
+    {
+      "Key": "nyl:provision",
+      "Value": "mgn"
+    },
+    {
+      "Key": "nyl:appid",
+      "Value": "APP-870"
+    },
+    {
+      "Key": "aws:ec2launchtemplate:id",
+      "Value": "lt-09312e0424b4e27bb"
+    },
+    {
+      "Key": "datatype",
+      "Value": "Business Confidential"
+    },
+    {
+      "Key": "provider",
+      "Value": "aws"
+    },
+    {
+      "Key": "AWSApplicationMigrationServiceSourceServerID",
+      "Value": "s-343506867eb0b45d7"
+    },
+    {
+      "Key": "ServerStatus",
+      "Value": "cutover"
+    },
+    {
+      "Key": "project",
+      "Value": "Cloud Migration"
+    },
+    {
+      "Key": "gig-backup",
+      "Value": "14d-2w-0m"
+    },
+    {
+      "Key": "lob",
+      "Value": "clientprosvs"
+    },
+    {
+      "Key": "application",
+      "Value": "Hearsay Social"
+    }
+  ],
+  "TpmSupport": null,
+  "UsageOperation": "RunInstances:0002",
+  "UsageOperationUpdateTime": "2024-06-25T03:22:20Z",
+  "VirtualizationType": "hvm",
+  "VpcId": "vpc-075128229ed32b744",
+  "WizMetadata": {
+    "externalId": "i-05187214b4e976613",
+    "nativeType": "virtualMachine",
+    "region": "us-east-1"
+  }
+}
